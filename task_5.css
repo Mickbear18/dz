@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* отпределяет размерность */ 
+
+}
+
+.header {
+    margin: 55px 68px 72px 84px;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: 195px 696px 130px 200px 196px;
+    align-items: center;
+    /* background-color: bisque; */
+}
+
+.nav > img {
+    width:128px;
+    height:40px;
+}
+
+/* .logo {
+
+} */
+
+.bbt {
+    border-radius: 5px;
+    width: 115px;
+    height: 35px;
+    background: none;
+    padding: 10px;
+    border: 0;
+    margin-left: 50px;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+}
+
+.one {
+    background-color: #005BFF;
+    color: white;
+}
+.two {
+    background-color: white;
+    color: #F91155;
+    border: 2px solid #F91155;
+}
+.three{
+    background-color: #F91155;
+    color: white;
+
+}    
+.hero {
+    margin-top: 70px;
+    width: 1200px;
+    height: 250px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://cdn1.ozone.ru/s3/sellerassets/4f122c03-8d56-11eb-b85a-4e54672b1040.jpeg);
+}
+
+.cards {
+    margin:60px 10px 152px 120px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr); /*  доля от того сколько укащана перед ней (1/3) */
+    grid-template-columns: repeat(3, 1fr); /*  от размерности */
+    grid-column-gap: 30px;
+    grid-row-gap: 80px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 230px;
+}
+
+
+.cars_img {
+    background-image: url(https://cdn3.ozone.ru/s3/multimedia-w/wc400/6013065980.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 250px;
+    width: 250px;
+    background-position: left center;
+}
+
+.cars_img_1 {
+    background-image: url(https://cdn3.ozone.ru/s3/multimedia-1/wc400/6046956565.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 250px;
+    width: 250px;
+}
+
+.cars_img_2 {
+    background-image: url(https://cdn3.ozone.ru/s3/multimedia-j/wc400/6046956547.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 250px;
+    width: 250px;  
+}
+
+.card_price {
+    color: #F91155;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.card_title {
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px 0 5px 0;
+}
+
+.card_bzn {
+    border-radius: 5px;
+    width: 125px;
+    height: 35px;
+    background: none;
+    padding: 10px;
+    border: 0;
+    margin-left: 50px;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    background-color: #005BFF;
+    color: white;
+    margin-left: 0;
+    margin-top: 10px;
+}
+
+.card_bzn:hover {
+    cursor: pointer;
+    background-color: #F91155;
+    transition: all 1s; /* замедляет*/
+    box-shadow: 2px 3px 10px black;
+}
+
+/* ======================================================================================== */
+
+@media screen and (max-width: 540px) {
+    .cards {
+        margin:35px 35px 30px 30px;
+        display: grid; 
+        width: 150px;
+        grid-column-gap: 1px;
+        grid-row-gap: 1px;
+        grid-template-columns: repeat(1, 1fr);  /* от размерности */
+        } 
+    .nav {
+    display: grid;
+    grid-template-columns: 20px 110px 60px 10px;
+    align-items: center;
+
+}
+
+    .nav > img {
+    width:58px;
+    height:40px;
+}
+
+    .header {
+        margin: 10px 8px 2px 30px;
+}
+.bbt {
+    border-radius: 5px;
+    width: 55px;
+    height: 25px;
+    background: none;
+    padding: 10px;
+    border: 0;
+    margin-left: 50px;
+    font-size: 7px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+}
+
+.one {
+    background-color: #005BFF;
+    color: white;
+}
+.two {
+    background-color: white;
+    color: #F91155;
+    border: 1px solid #F91155;
+}
+.three{
+    background-color: #F91155;
+    color: white;
+}
+
+.hero {
+    margin-top: 70px;
+    width: 300px;
+    height: 70px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://cdn1.ozone.ru/s3/sellerassets/4f122c03-8d56-11eb-b85a-4e54672b1040.jpeg);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 150px;
+}
+
+    .header {
+        width: 50%;
+    }
+}  
